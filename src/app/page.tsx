@@ -18,6 +18,7 @@ export default function Home() {
           slides={imagensQuartos}
           map={imagensQuartos.map((item) => (
             <CardQuarto
+              key={item.title}
               image={item.imagem}
               title={item.title}
               subtitle={item.subtitle}
@@ -27,8 +28,7 @@ export default function Home() {
       </main>
 
       {/* RODAPE */}
-      <footer className="h-12 w-full justify-center flex items-center">
-      </footer>
+      <footer className="h-12 w-full justify-center flex items-center"></footer>
     </>
   );
 }
