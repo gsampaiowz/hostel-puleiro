@@ -8,6 +8,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
