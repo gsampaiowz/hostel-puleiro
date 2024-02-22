@@ -9,7 +9,7 @@ type CarouselProps = {
 };
 
 const Carousel: React.FC<CarouselProps> = ({ map, slides }) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(3);
 
   const prev = () =>
     setCurrentSlide((curr) => (curr === 0 ? slides.length - 1 : curr - 1 ));
