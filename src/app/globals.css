@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: ;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-image: url("https://drive.google.com/thumbnail?id=152ilQ5lt2FncmdbzxsX0hT5bpQt8yUYH&sz=w10000"); */
+  background-image: url("@/../../assets/img/background.jpg");
+}
+
+body::before{
+  content: "";
+  z-index:-1;
+  position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0; 
+  background: rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
