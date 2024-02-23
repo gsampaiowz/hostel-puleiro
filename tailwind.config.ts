@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      cssBreak: "1050px",
+      cssBreak: {'max': '768px'},
     },
     extend: {
       colors: {

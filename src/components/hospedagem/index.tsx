@@ -13,7 +13,7 @@ const Hospedagem = () => {
           <input className="rounded-md w-64 h-12 pl-4 pr-4" type="date" />
         </div>
       </div>
-      <a className="text-center text-white bg-[#513c34] p-2 rounded-md " href="">RESERVAR</a>
+      <a className="text-center text-white bg-[#513c34] p-2 rounded-md" target="_blank" href="https://booking.hqbeds.com.br/puleirohostel?arrival=&departure=">RESERVAR</a>
     </div>
   );
 };
