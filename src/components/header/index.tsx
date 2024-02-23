@@ -14,7 +14,7 @@ const Header = () => {
           alt="Logo"
         />
 
-        <h1 className="text-white drop-shadow-[0_0_10px_rgba(0,0,0,1)]">Rua Aristides Milton, 25,   Salvador-BA Cep 41610011</h1>
+        <h1 className="text-white my-animated-button">Clique para conhecer mais</h1>
     </header>
   );
 };
