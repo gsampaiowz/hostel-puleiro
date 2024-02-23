@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
 
       {/* CONTEUDO */}
-      <main className="max-w-[1600px] overflow-hidden flex min-h-screen flex-col gap-16 items-center w-[90%] m-auto">
+      <main className="max-w-[1600px] flex min-h-screen flex-col gap-16 items-center w-[90%] m-auto">
         <Hospedagem />
 
         <small className="font-bold text-lg text-white drop-shadow-[0_0_5px_rgba(0,0,0,1)]">
