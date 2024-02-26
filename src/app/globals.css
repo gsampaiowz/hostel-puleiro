@@ -17,48 +17,86 @@ body {
   background-image: url("@/../../assets/img/background.jpg");
 }
 
-body::before{
+body::before {
   content: "";
-  z-index:-1;
+  z-index: -1;
   position: fixed;
-  top: 0; bottom: 0; left: 0; right: 0; 
-  background: rgba(0,0,0,0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
 
-.my-animated-button{
-  width:  60vmin;
-  height:  50vmin;
-  display: grid;
-  place-content: center;
-  color: white;
-  text-shadow:  0  1px  0 #000;
-   
-  --border-angle:  0turn;
-  --main-bg: conic-gradient(from var(--border-angle), #213, #112  5%, #112  60%, #213  95%);
-  --gradient-border: conic-gradient(from var(--border-angle), transparent  25%, #08f, #f03  99%, transparent);
-   
-  border: solid  5px transparent;
-  border-radius:  2em;
-   
-  background:  
-    var(--main-bg) padding-box,
-    var(--gradient-border) border-box,  
-    var(--main-bg) border-box;
-   
-  background-position: center center;
-
-  animation: bg-spin  3s linear infinite;
+.my-animated-button {
+  position: relative;
+  padding: 24px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
-@keyframes bg-spin {
-  to {
-    --border-angle:  1turn;
+.my-animated-button::before,
+.my-animated-button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid #fff;
+  transition: all 0.5s;
+  -webkit-animation: clippath 3s infinite linear;
+  animation: clippath 3s infinite linear;
+  border-radius: 10px;
+}
+
+.my-animated-button::after {
+  -webkit-animation: clippath 3s infinite -1.5s linear;
+  animation: clippath 3s infinite -1.5s linear;
+}
+
+@-webkit-keyframes clippath {
+  0%,
+  100% {
+    -webkit-clip-path: inset(0 0 98% 0);
+    clip-path: inset(0 0 98% 0);
+  }
+  25% {
+    -webkit-clip-path: inset(0 98% 0 0);
+    clip-path: inset(0 98% 0 0);
+  }
+  50% {
+    -webkit-clip-path: inset(98% 0 0 0);
+    clip-path: inset(98% 0 0 0);
+  }
+  75% {
+    -webkit-clip-path: inset(0 0 0 98%);
+    clip-path: inset(0 0 0 98%);
   }
 }
 
-.my-animated-button:hover {
-  animation-play-state: paused;
+@keyframes clippath {
+  0%,
+  100% {
+    -webkit-clip-path: inset(0 0 98% 0);
+    clip-path: inset(0 0 98% 0);
+  }
+  25% {
+    -webkit-clip-path: inset(0 98% 0 0);
+    clip-path: inset(0 98% 0 0);
+  }
+  50% {
+    -webkit-clip-path: inset(98% 0 0 0);
+    clip-path: inset(98% 0 0 0);
+  }
+  75% {
+    -webkit-clip-path: inset(0 0 0 98%);
+    clip-path: inset(0 0 0 98%);
+  }
 }
 
 @layer utilities {

@@ -2,6 +2,7 @@
 import { imagensQuartosProps } from "@/assets/img";
 import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useSwipeable } from "react-swipeable";
 
 type CarouselProps = {
   map: React.ReactNode;
@@ -17,8 +18,13 @@ const Carousel: React.FC<CarouselProps> = ({ map, slides }) => {
   const next = () =>
     setCurrentSlide((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => next(),
+    onSwipedRight: () => prev(),
+  });
+
   return (
-    <div className="max-w-72 mb-8 rounded-lg overflow-visible drop-shadow-[0_0_5px_rgba(0,0,0,1)] relative">
+    <div {...handlers} className="max-w-72 mb-8 rounded-lg overflow-visible drop-shadow-[0_0_5px_rgba(0,0,0,1)] relative">
       <div
         className="rounded-lg flex ml-32 gap-32 min-w-[416px] transition-transform ease-out duration-500 relative"
         style={{
