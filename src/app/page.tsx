@@ -94,12 +94,12 @@ export default function Home() {
           <div className="bg-red-600 flex items-center min-h-[404px] p-12 rounded-3xl overflow-hidden relative size-full max-w-[404px]  before:-z-1 before:absolute before:size-full before:top-0 before:left-0 before:backdrop-brightness-50 drop-shadow-[0_0_5px_rgba(0,0,0,1)]">
             <p className="text-white font-bold relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,1)] leading-7">
               Quanto à chegada após às{" "}
-              <span className="text-blue-300">22h</span>, não se preocupe.
+              <span className="text-blue-400">22h</span>, não se preocupe.
               Nosso funcionamento é das 7 às 22h, mas recebemos o hóspede após
               esse horário e na madrugada, desde que o check in online esteja
               concluído e a previsão do horário seja informada. Além disso, você
               receberá a
-              <span className="text-blue-300">
+              <span className="text-blue-400">
                 {" "}
                 senha da porta de entrada do hostel
               </span>{" "}
