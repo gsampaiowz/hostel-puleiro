@@ -4,7 +4,7 @@ import Logo from "@/assets/img/logo.jpg";
 
 const Header = () => {
   return (
-    <header className="flex gap-8 flex-col justify-center items-center py-24 w-full min-h-96 ">
+    <header className="flex gap-12 flex-col justify-center items-center w-full min-h-screen ">
         {/* <img className="rounded-full invert" width={180} height={180} src="https://drive.google.com/thumbnail?id=1iGtMQa7TcIgwdPPdiL_nk3t8iWNV22qW&sz=w10000" alt="" /> */}
         <img
           className="rounded-full invert"
