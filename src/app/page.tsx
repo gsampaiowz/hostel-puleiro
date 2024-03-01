@@ -108,7 +108,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="bg-blue-600 flex flex-col gap-8">
+        <div className="bg-blue-600 rounded-3xl p-12 flex flex-col gap-8">
           <h1 className="text-center font-bold text-white drop-shadow-[0_0_5px_rgba(0,0,0,1)] text-3xl">
             Cancelamento
           </h1>
