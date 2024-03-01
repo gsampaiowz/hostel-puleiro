@@ -1,14 +1,7 @@
 import Header from "@/components/header";
-import Hospedagem from "../components/hospedagem";
 import Carousel from "./../components/carousel/index";
 import imagensQuartos from "@/assets/img";
 import CardQuarto from "@/components/cardQuarto";
-import cozinhaCompartilhada from "@/assets/img/cozinha-compartilhada.png";
-import recepcao from "@/assets/img/recepcao.png";
-import recepcao2 from "@/assets/img/recepcao2.png";
-import madrugada from "@/assets/img/madrugada.png";
-import lavanderia from "@/assets/img/lavanderia.jpg";
-import lavanderia2 from "@/assets/img/lavanderia2.jpg";
 import whats from "@/assets/icons/whats.png";
 import insta from "@/assets/icons/insta.png";
 import { MdEmail } from "react-icons/md";
