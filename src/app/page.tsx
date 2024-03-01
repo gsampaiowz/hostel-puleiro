@@ -42,7 +42,7 @@ export default function Home() {
               </li>
               <li>• Banheiro privado</li>
               <li>
-                • <span className="text-green-400">CHECK IN 14h</span>{" "}
+                • <span className="text-red-400">CHECK IN 14h</span>{" "}
               </li>
               <li>
                 • <span className="text-red-400">CHECK OUT 12h</span>{" "}
@@ -63,7 +63,7 @@ export default function Home() {
           <div className="bg-blue-600 flex items-center min-h-[404px] p-12 rounded-3xl overflow-hidden relative size-full max-w-[404px]  before:-z-1 before:absolute before:size-full before:top-0 before:left-0 before:backdrop-brightness-50 drop-shadow-[0_0_5px_rgba(0,0,0,1)]">
             <p className="text-white font-bold relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,1)] leading-7">
               Temos o serviço de Day Use no valor de{" "}
-              <span className="text-green-400">R$20,00 por pessoa</span> <br />{" "}
+              <span className="text-red-400">R$20,00 por pessoa</span> <br />{" "}
               Você poderá ter acesso aos banheiros com chuveiro e maleiro, além
               da área social com WIFI onde será seu local de espera. Lembrando
               que o período deste serviço acontece apenas das 9H às 18H.
@@ -73,7 +73,7 @@ export default function Home() {
           <div className="bg-red-600 flex items-center min-h-[404px] p-12 rounded-3xl overflow-hidden relative size-full max-w-[404px]  before:-z-1 before:absolute before:size-full before:top-0 before:left-0 before:backdrop-brightness-50 drop-shadow-[0_0_5px_rgba(0,0,0,1)]">
             <p className="text-white font-bold relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,1)] leading-7">
               Taxa única para o
-              <span className="text-green-400"> aluguel de toalha: R$10</span> e
+              <span className="text-blue-400"> aluguel de toalha: R$10</span> e
               <span className="text-blue-400"> cadeado: R$5</span> (quartos
               compartilhados) <br />• Em caso da não devolução de material e
               danificação será cobrado um valor extra de R$ 20; <br />• Favor
@@ -85,7 +85,7 @@ export default function Home() {
           <div className="bg-blue-600 flex items-center min-h-[404px] p-12 rounded-3xl overflow-hidden relative size-full max-w-[404px]  before:-z-1 before:absolute before:size-full before:top-0 before:left-0 before:backdrop-brightness-50 drop-shadow-[0_0_5px_rgba(0,0,0,1)]">
             <p className="text-white font-bold relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,1)] leading-7">
               Para 10kg de roupa para lavagem
-              <span className="text-green-400"> cobramos R$20</span>. <br />
+              <span className="text-red-400"> cobramos R$20</span>. <br />
               <br />
               • O hóspede é responsável por estender as as roupas no varal
               <br />• O tempo de lavagem completa são de 2H
@@ -94,7 +94,7 @@ export default function Home() {
           <div className="bg-red-600 flex items-center min-h-[404px] p-12 rounded-3xl overflow-hidden relative size-full max-w-[404px]  before:-z-1 before:absolute before:size-full before:top-0 before:left-0 before:backdrop-brightness-50 drop-shadow-[0_0_5px_rgba(0,0,0,1)]">
             <p className="text-white font-bold relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,1)] leading-7">
               Quanto à chegada após às{" "}
-              <span className="text-green-300">22h</span>, não se preocupe.
+              <span className="text-blue-300">22h</span>, não se preocupe.
               Nosso funcionamento é das 7 às 22h, mas recebemos o hóspede após
               esse horário e na madrugada, desde que o check in online esteja
               concluído e a previsão do horário seja informada. Além disso, você
