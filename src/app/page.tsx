@@ -99,7 +99,7 @@ export default function Home() {
               esse horário e na madrugada, desde que o check in online esteja
               concluído e a previsão do horário seja informada. Além disso, você
               receberá a
-              <span className="text-green-300">
+              <span className="text-blue-300">
                 {" "}
                 senha da porta de entrada do hostel
               </span>{" "}
