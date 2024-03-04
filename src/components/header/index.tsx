@@ -7,7 +7,7 @@ const Header = () => {
     <header className="flex gap-12 flex-col justify-center items-center w-full min-h-screen ">
         {/* <img className="rounded-full invert" width={180} height={180} src="https://drive.google.com/thumbnail?id=1iGtMQa7TcIgwdPPdiL_nk3t8iWNV22qW&sz=w10000" alt="" /> */}
         <img
-          className="rounded-full invert"
+          className="rounded-full"
           width={180}
           height={180}
           src={Logo.src}
